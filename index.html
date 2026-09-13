@@ -1,10 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+  rel="preconnect"
+  href="https://fonts.googleapis.com"
+/>
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</body>
+    <meta charset="UTF-8" />
+    <title>Kadyrzhan Pardabaev CV</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="wrap cv-header">
+        <img
+          src="./public/kadyrzhan_photo.png"
+          alt="Kadyrzhan Pardabaev"
+          class="avatar"
+        />
+        <div class="cv-heading">
+          <h1>Kadyrzhan Pardabaev</h1>
+          <p class="tagline">Junior Full-Stack Developer — Tashkent, Uzbekistan</p>
+          
+          <nav><ul class="skills-list">
+    <li>
+        <a href="mailto:kadyrzhanpardabaev4@gmail.com">
+            kadyrzhanpardabaev4@gmail.com
+        </a>
+    </li>
+
+    <li>
+        <span>+998 99 999-49-23</span>
+    </li>
+
+    <li>
+        <a href="https://t.me/kadyrzhan_23">
+            @kadyrzhan_23
+        </a>
+    </li>
+
+    <li>
+        <span>Discord: Kadyrzhan23</span>
+    </li>
+</ul>
+</nav>
+        </div>
+        
+      </header>
+      <main>
+        <section class="about wrap">
+          <h2>About</h2>
+          <p class="p-20">I'm a Junior Full-Stack Developer based in Tashkent. After years in hospitality -- where I learned to stay calm under pressure and solve problems for people in real time -- I moved into software development, completed a front-end course at IT STEP Academy in 2023, and have kept building ever since. I work mainly with React, TypeScript, Node.js and MongoDB. I don't have professional development experience yet, so the projects below are the best proof of what I can build. I'm applying to RS School by EPAM to keep growing as an engineer alongside a team.</p>
+        </section>
+
+        <section class="mt-20 wrap">
+          <h2>Skills</h2>
+          <ul class="skills-list p-20">
+            <li>JavaScript (ES6+)</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Redux Toolkit / RTK Query</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>REST APIs</li>
+            <li>JWT Auth</li>
+            <li>react-i18next</li>
+            <li>Git</li>
+          </ul>
+        </section>
+
+        <section class="projects wrap mt-20">
+          <h2>Projects</h2>
+          <div class="p-20">
+
+          <article class="project">
+            <div class="project-head">
+              <h3>Agro Science Journal</h3>
+              <a href="https://github.com/Kadyrzhan23/aziz-journal" target="_blank">Repository →</a>
+            </div>
+            <p>A multilingual (UZ / RU / EN / KK ) academic journal platform. React and TypeScript front-end using react-i18next and RTK Query; a Node.js / Express / MongoDB backend running across multiple subdomains on a single VPS, with JWT auth and a Volume → Issue → Article content hierarchy.</p>
+          <ul class="skills-list">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>i18n</li>
+          </ul>
+            </article>
+        <article class="project">
+          <div class="project-head">
+            <h3>Admin Dashboard — Products, Orders &amp; Users</h3>
+            <div class="project-links">
+              <a href="https://github.com/Kadyrzhan23/new-dashboard-fe">Frontend →</a>
+              <a href="https://github.com/Kadyrzhan23/new-dashboard-be">Backend →</a>
+            </div>
+          </div>
+          <p>
+            A solo-built admin dashboard for running an e-commerce back office: product
+            visibility controls (stop-list / top-list), order tracking, and customer lookup by
+            phone number with full order history. React 19 front end with Redux Toolkit
+            (RTK Query), Tailwind CSS and Radix UI; Node.js / Express / TypeScript API with
+            MongoDB, JWT auth and celebrate-based request validation.
+          </p>
+          <ul class="skills-list">
+            <li>React</li>
+            <li>Redux Toolkit</li>
+            <li>RTK Query</li>
+            <li>Tailwind CSS</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>TypeScript</li>
+            <li>MongoDB</li>
+            <li>JWT</li>
+          </ul>
+        </article>
+        </div>
+        </section>
+        
+        <section class="wrap mt-20 education">
+          <h2>Education</h2>
+
+          <div class="institution">
+              <div class=" p-20">
+                <h3>IT STEP Academy — Front-End Development</h3>
+                <p class="meta">Tashkent, Uzbekistan</p>
+              </div>
+              <span class="when">2023</span>
+          </div>
+
+          <div class="institution">
+              <div class=" p-20">
+                <h3>Tashkent Agrarian College — Agronomy</h3>
+                <p class="meta">Secondary Specialized Education</p>
+              </div>
+              <span class="when">2017</span>
+          </div>
+
+        </section>
+
+        <section class="code-example wrap">
+  <h2>Code Example</h2>
+  <div class="p-20">
+    <p>
+      Codewars — Who Wants to Be a Millionaire?
+    </p>
+
+    <pre><code>
+function getTotalCashPrize(prizeFund, correctAnswers, playerActions) {
+    let money = 0;
+    let safeMoney = 0;
+    let lifelines = 0;
+
+    for (let i = 0; i < playerActions.length; i++) {
+        let action = playerActions[i];
+
+        for (let j = 0; j < action.length - 1; j++) {
+            if (action[j] === "1" || action[j] === "2" || action[j] === "3") {
+                lifelines++;
+            }
+        }
+
+        let answer = action[action.length - 1];
+
+        if (answer === "W") {
+            return [money, lifelines];
+        }
+
+        if (answer === "X") {
+            return [safeMoney, lifelines];
+        }
+
+        if (answer === correctAnswers[i]) {
+            money += prizeFund[i];
+
+            if ((i + 1) % 5 === 0) {
+                safeMoney = money;
+            }
+        } else {
+            return [0, lifelines];
+        }
+    }
+
+    return [money, lifelines];
+}
+    </code></pre>
+        </section>
+
+        <section class="languages wrap mt-20">
+        <h2>Languages</h2>
+        <div class="lang-grid">
+          <div class="lang-item"><span>English</span><span>Intermediate</span></div>
+          <div class="lang-item"><span>Uzbek</span><span>Fluent</span></div>
+          <div class="lang-item"><span>Russian</span><span>Fluent</span></div>
+          <div class="lang-item"><span>Kazakh</span><span>Native</span></div>
+        </div>
+
+        <p class="language-note">
+  I use English for reading technical documentation, studying programming
+  materials, communicating in developer communities and working with
+  development tools.
+</p>
+      </section>
+      </main>
+<footer class="footer wrap">
+  <a
+    href="https://rs.school/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://rs.school/_next/static/media/rss-logo.c19ce1b4.svg"
+      alt="RS School"
+    />
+  </a>
+
+  <a
+    href="https://github.com/Kadyrzhan23"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub
+  </a>
+
+  <span>© 2026 Kadyrzhan Pardabaev</span>
+</footer>
+    </div>
+  </body>
 </html>
