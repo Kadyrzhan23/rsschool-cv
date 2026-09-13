@@ -211,3 +211,35 @@ header{
   .project .chip-list li {
     background: var(--bg);
   }
+
+   .institution {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px 20px;
+    flex-wrap: wrap;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .institution:last-child { border-bottom: none; }
+
+  .institution h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .institution .meta {
+    margin: 2px 0 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .institution .when {
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.82rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
